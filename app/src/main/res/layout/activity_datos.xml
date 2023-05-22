@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="418dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#8BC34A"
+        android:backgroundTint="#DAECC5"
+        android:contentDescription="barra de scroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carddireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:minWidth="300dp"
+                android:minHeight="100dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imageDireccion"
+                    android:layout_width="72dp"
+                    android:layout_height="69dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/direccion" />
+
+                <TextView
+                    android:id="@+id/TextoDireccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Avda. San Carlos de Chile, s/n" />
+
+                <TextView
+                    android:id="@+id/TextoDireccion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="50dp"
+                    android:text="14850 - Baena (Córdoba)" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardcorreo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:minWidth="300dp"
+                android:minHeight="100dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imageCorreo"
+                    android:layout_width="58dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/email" />
+
+                <TextView
+                    android:id="@+id/TextoCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Correo electrónico" />
+
+                <TextView
+                    android:id="@+id/TextoCorreo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="50dp"
+                    android:text="14000483.edu@juntadeandalucia.es" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardtelefono"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:minWidth="300dp"
+                android:minHeight="100dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imageTelefono"
+                    android:layout_width="58dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/telefono" />
+
+                <TextView
+                    android:id="@+id/TextoTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Teléfono" />
+
+                <TextView
+                    android:id="@+id/TextoTelefono2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="50dp"
+                    android:text="957699579 " />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="¿QUÉ QUIERES SABER?"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="#468849"
+                android:backgroundTint="#48854A"
+                android:ems="10"
+                android:hint="Nombre"
+
+                android:inputType="textPersonName"
+                android:textColor="#FAF9F9"
+                android:textColorHint="#DFDBDB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextTextCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="#468849"
+                android:backgroundTint="#48854A"
+                android:ems="10"
+                android:hint="Correo electrónico"
+
+                android:inputType="textEmailAddress"
+                android:textColor="#FAF9F9"
+                android:textColorHint="#DFDBDB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="#468849"
+                android:backgroundTint="#48854A"
+                android:ems="10"
+                android:hint="Teléfono"
+
+                android:inputType="phone"
+                android:textColor="#FAF9F9"
+                android:textColorHint="#DFDBDB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextComentario"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="#468849"
+                android:backgroundTint="#48854A"
+                android:ems="10"
+                android:hint="Mensaje"
+
+                android:inputType="textMultiLine"
+                android:textColor="#FAF9F9"
+                android:textColorHint="#DFDBDB"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Acepto la Política de privacidad y los términos del servicio" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#3F7741"
+                android:text="ENVIAR" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
